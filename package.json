@@ -2,6 +2,9 @@
   "name": "@beesley/tsconfig",
   "version": "1.0.0",
   "description": "Useful tsconfig files for stuff",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "*.json"
   ],
