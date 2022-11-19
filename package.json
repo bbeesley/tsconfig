@@ -1,0 +1,87 @@
+{
+  "name": "@beesley/tsconfig",
+  "version": "0.0.0",
+  "description": "Useful tsconfig files for stuff",
+  "files": [
+    "*.json"
+  ],
+  "scripts": {
+    "test:lambda-cjs": "tsc --noEmit -p lambda-cjs.json",
+    "test:lambda-esm": "tsc --noEmit -p lambda-esm.json",
+    "test:lambda": "tsc --noEmit -p lambda.json",
+    "test:npm-cjs": "tsc --noEmit -p npm-cjs.json",
+    "test:npm-esm": "tsc --noEmit -p npm-esm.json",
+    "test:npm": "tsc --noEmit -p npm.json",
+    "test": "run-p test:*",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbeesley/tsconfig.git"
+  },
+  "author": "Bill Beesley <bill@beesley.dev>;",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.2",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "conventional-changelog-angular": "^5.0.13",
+    "cz-conventional-changelog": "^3.3.0",
+    "npm-run-all": "^4.1.5",
+    "semantic-release": "^19.0.2"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "next"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "releaseRules": [
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
+              "type": "refactor",
+              "release": "patch"
+            },
+            {
+              "type": "chore",
+              "scope": "deps*",
+              "release": "patch"
+            }
+          ]
+        }
+      ],
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md",
+            "README.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} 🚀 [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  }
+}
