@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/bbeesley/tsconfig/compare/v1.0.3...v1.1.0) (2022-11-22)
+
+
+### Features
+
+* add webpack config ([e7fba82](https://github.com/bbeesley/tsconfig/commit/e7fba821d136d9fe58a039ba0d35635b9268dd44))
+
 ## [1.0.3](https://github.com/bbeesley/tsconfig/compare/v1.0.2...v1.0.3) (2022-11-22)
 
 ## [1.0.2](https://github.com/bbeesley/tsconfig/compare/v1.0.1...v1.0.2) (2022-11-22)
