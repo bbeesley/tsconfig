@@ -12,6 +12,7 @@
     "test:lambda-cjs": "tsc --noEmit -p lambda-cjs.json",
     "test:lambda-esm": "tsc --noEmit -p lambda-esm.json",
     "test:lambda": "tsc --noEmit -p lambda.json",
+    "test:webpack": "tsc --noEmit -p webpack.json",
     "test:npm-cjs": "tsc --noEmit -p npm-cjs.json",
     "test:npm-esm": "tsc --noEmit -p npm-esm.json",
     "test:npm": "tsc --noEmit -p npm.json",
