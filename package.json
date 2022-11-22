@@ -1,6 +1,6 @@
 {
   "name": "@beesley/tsconfig",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Useful tsconfig files for stuff",
   "publishConfig": {
     "access": "public"
