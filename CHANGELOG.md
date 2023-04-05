@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/bbeesley/tsconfig/compare/v1.1.4...v2.0.0) (2023-04-05)
+
+
+### Features
+
+* migrate to typescript 5 ([b018974](https://github.com/bbeesley/tsconfig/commit/b018974b3e2f723166eb6b316b66a6edbc25e536))
+
+
+### BREAKING CHANGES
+
+* verbatim module syntax requires typescript 5
+
 ## [1.1.4](https://github.com/bbeesley/tsconfig/compare/v1.1.3...v1.1.4) (2023-01-05)
 
 ## [1.1.3](https://github.com/bbeesley/tsconfig/compare/v1.1.2...v1.1.3) (2023-01-05)
