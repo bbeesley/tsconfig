@@ -35,7 +35,7 @@
     "skipLibCheck": false,
     "exactOptionalPropertyTypes": true,
     "noImplicitOverride": true,
-    "importsNotUsedAsValues": "error",
+    "verbatimModuleSyntax": true,
     "types": []
   }
 }

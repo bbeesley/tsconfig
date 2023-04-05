@@ -9,13 +9,13 @@
     "*.json"
   ],
   "scripts": {
-    "test:lambda-cjs": "tsc --noEmit -p lambda-cjs.json",
-    "test:lambda-esm": "tsc --noEmit -p lambda-esm.json",
-    "test:lambda": "tsc --noEmit -p lambda.json",
-    "test:webpack": "tsc --noEmit -p webpack.json",
-    "test:npm-cjs": "tsc --noEmit -p npm-cjs.json",
-    "test:npm-esm": "tsc --noEmit -p npm-esm.json",
-    "test:npm": "tsc --noEmit -p npm.json",
+    "test:lambda-cjs": "cd test-cjs && tsc --noEmit -p lambda-cjs.json",
+    "test:lambda-esm": "cd test-esm && tsc --noEmit -p lambda-esm.json",
+    "test:lambda": "cd test-esm && tsc --noEmit -p lambda.json",
+    "test:webpack": "cd test-esm && tsc --noEmit -p webpack.json",
+    "test:npm-cjs": "cd test-cjs && tsc --noEmit -p npm-cjs.json",
+    "test:npm-esm": "cd test-esm && tsc --noEmit -p npm-esm.json",
+    "test:npm": "cd test-esm && tsc --noEmit -p npm.json",
     "test": "run-p test:*",
     "release": "semantic-release"
   },
@@ -33,12 +33,12 @@
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.2",
-    "@semantic-release/npm": "^10.0.2",
+    "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "conventional-changelog-angular": "^5.0.13",
     "cz-conventional-changelog": "^3.3.0",
     "npm-run-all": "^4.1.5",
-    "semantic-release": "^21.0.0"
+    "semantic-release": "^20.0.2"
   },
   "release": {
     "branches": [
