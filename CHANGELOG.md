@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/bbeesley/tsconfig/compare/v2.0.0...v3.0.0) (2023-10-06)
+
+
+### Features
+
+* migrate to node 18 ([d8f55c5](https://github.com/bbeesley/tsconfig/commit/d8f55c56e52119cb9077ce12404b439446b1cc66))
+
+
+### BREAKING CHANGES
+
+* Drops support for nodejs versions below 18.12
+
 # [2.0.0](https://github.com/bbeesley/tsconfig/compare/v1.1.4...v2.0.0) (2023-04-05)
 
 
