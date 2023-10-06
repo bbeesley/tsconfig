@@ -6,7 +6,7 @@
     "isolatedModules": false,
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "module": "node16",
-    "target": "ES2021",
+    "target": "ES2022",
     "moduleResolution": "node16",
     "sourceMap": true,
     "declaration": true,
